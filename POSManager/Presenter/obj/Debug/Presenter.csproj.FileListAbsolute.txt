@@ -1,0 +1,16 @@
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Presenter.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Presenter.pdb
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Lambda.BusinessObject.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Lambda.ClientModel.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Lambda.Framework.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Lambda.CoreService.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Lambda.AutoService.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Lambda.DataObject.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Lambda.DynamicLoad.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\obj\Debug\Presenter.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\obj\Debug\Presenter.pdb
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Model.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\View.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Model.pdb
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\View.pdb
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\obj\Debug\Presenter.csprojResolveAssemblyReference.cache

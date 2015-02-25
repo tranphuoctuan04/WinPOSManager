@@ -1,0 +1,11 @@
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Model.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Model.pdb
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Lambda.BusinessObject.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Lambda.ClientModel.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Lambda.Framework.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Lambda.CoreService.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Lambda.AutoService.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Lambda.DataObject.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\bin\Debug\Lambda.DynamicLoad.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\obj\Debug\Model.dll
+c:\users\danh\documents\visual studio 2012\Projects\POSManager\Model\obj\Debug\Model.pdb
