@@ -32,9 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductUserControl));
             this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.ProductcontextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.NameLable = new DevExpress.XtraEditors.LabelControl();
             this.PriceLable = new DevExpress.XtraEditors.LabelControl();
+            this.HanghoabindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelControl = new DevExpress.XtraEditors.PanelControl();
+            this.Namelabel = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HanghoabindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl)).BeginInit();
+            this.panelControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageCollection
@@ -46,32 +52,62 @@
             this.ProductcontextMenuStrip.Name = "ProductcontextMenuStrip";
             this.ProductcontextMenuStrip.Size = new System.Drawing.Size(61, 4);
             // 
-            // NameLable
-            // 
-            this.NameLable.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLable.Location = new System.Drawing.Point(10, 46);
-            this.NameLable.Name = "NameLable";
-            this.NameLable.Size = new System.Drawing.Size(32, 13);
-            this.NameLable.TabIndex = 1;
-            this.NameLable.Text = "Name";
-            // 
             // PriceLable
             // 
-            this.PriceLable.Location = new System.Drawing.Point(10, 65);
+            this.PriceLable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PriceLable.Location = new System.Drawing.Point(66, 3);
             this.PriceLable.Name = "PriceLable";
-            this.PriceLable.Size = new System.Drawing.Size(23, 13);
+            this.PriceLable.Size = new System.Drawing.Size(34, 13);
             this.PriceLable.TabIndex = 1;
-            this.PriceLable.Text = "Price";
+            this.PriceLable.Text = "15,000";
+            // 
+            // HanghoabindingSource
+            // 
+            this.HanghoabindingSource.DataSource = typeof(Model.BusinessObject.HanghoaModel);
+            this.HanghoabindingSource.PositionChanged += new System.EventHandler(this.HanghoabindingSource_PositionChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panelControl
+            // 
+            this.panelControl.Controls.Add(this.Namelabel);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl.Location = new System.Drawing.Point(0, 69);
+            this.panelControl.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+            this.panelControl.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(109, 21);
+            this.panelControl.TabIndex = 3;
+            // 
+            // Namelabel
+            // 
+            this.Namelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Namelabel.Location = new System.Drawing.Point(5, 3);
+            this.Namelabel.Name = "Namelabel";
+            this.Namelabel.Size = new System.Drawing.Size(27, 13);
+            this.Namelabel.TabIndex = 2;
+            this.Namelabel.Text = "Name";
             // 
             // ProductUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.panelControl);
             this.Controls.Add(this.PriceLable);
-            this.Controls.Add(this.NameLable);
             this.Name = "ProductUserControl";
-            this.Size = new System.Drawing.Size(111, 85);
+            this.Size = new System.Drawing.Size(109, 90);
+            this.DoubleClick += new System.EventHandler(this.ProductUserControl_Click);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HanghoabindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl)).EndInit();
+            this.panelControl.ResumeLayout(false);
+            this.panelControl.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,7 +117,10 @@
 
         private DevExpress.Utils.ImageCollection imageCollection;
         private System.Windows.Forms.ContextMenuStrip ProductcontextMenuStrip;
-        private DevExpress.XtraEditors.LabelControl NameLable;
         private DevExpress.XtraEditors.LabelControl PriceLable;
+        private System.Windows.Forms.BindingSource HanghoabindingSource;
+        private System.Windows.Forms.Timer timer1;
+        public DevExpress.XtraEditors.PanelControl panelControl;
+        public DevExpress.XtraEditors.LabelControl Namelabel;
     }
 }

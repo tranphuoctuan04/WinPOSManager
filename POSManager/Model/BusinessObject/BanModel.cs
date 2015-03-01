@@ -21,6 +21,7 @@ namespace Model.BusinessObject
         private Nullable<Int32> _STT;
         private Nullable<Boolean> _Candon;
         private Nullable<Boolean> _Hoatdong;
+        private Byte[] _Version;
         private String _Ten;
 
         public BanModel()
@@ -151,6 +152,25 @@ namespace Model.BusinessObject
         }
         
         
+        [DisplayName("Version")]
+	    [Column(Name="Version",SqlType=SqlDbType.Timestamp)]
+        public Byte[] Version
+        {
+            get
+			{
+				Byte[] vGet = _Version;
+				OnVersionGetting(ref _Version, ref vGet);
+				return vGet;
+			}
+            set
+            {
+                OnVersionChanging(value);
+                SetProperty(ref _Version, value);
+                OnVersionChanged();
+            }
+        }
+        
+        
         [DisplayName("Ten")]
 	    [Column(Name="Ten",SqlType=SqlDbType.NVarChar)]
         public String Ten
@@ -202,6 +222,11 @@ namespace Model.BusinessObject
         partial void OnHoatdongChanging(Nullable<Boolean> value);
         partial void OnHoatdongChanged();
 		partial void OnHoatdongGetting(ref Nullable<Boolean> value, ref Nullable<Boolean> vGet);
+        
+        
+        partial void OnVersionChanging(Byte[] value);
+        partial void OnVersionChanged();
+		partial void OnVersionGetting(ref Byte[] value, ref Byte[] vGet);
         
         
         partial void OnTenChanging(String value);

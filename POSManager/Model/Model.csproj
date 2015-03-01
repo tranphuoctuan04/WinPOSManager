@@ -45,10 +45,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObject\BanggiaModel.cs" />
+    <Compile Include="BusinessObject\BanggiaModel.Designer.cs">
+      <DependentUpon>BanggiaModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="BusinessObject\BanModel.cs" />
     <Compile Include="BusinessObject\BanModel.Designer.cs">
       <DependentUpon>BanModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusinessObject\ChitietHoadonModel.cs" />
+    <Compile Include="BusinessObject\ChitietHoadonModel.Designer.cs">
+      <DependentUpon>ChitietHoadonModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject\HanghoaModel.cs" />
+    <Compile Include="BusinessObject\HanghoaModel.Designer.cs">
+      <DependentUpon>HanghoaModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject\HoadonModel.cs" />
+    <Compile Include="BusinessObject\HoadonModel.Designer.cs">
+      <DependentUpon>HoadonModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject\NhomHanghoaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

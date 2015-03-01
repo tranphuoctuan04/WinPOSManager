@@ -47,7 +47,7 @@
             // BanbindingSource
             // 
             this.BanbindingSource.DataSource = typeof(Model.BusinessObject.BanModel);
-            this.BanbindingSource.PositionChanged += new System.EventHandler(this.BanbindingSource_PositionChanged);
+            this.BanbindingSource.DataSourceChanged += new System.EventHandler(this.BanbindingSource_DataSourceChanged);
             // 
             // ListTableUserControl
             // 

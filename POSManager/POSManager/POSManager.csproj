@@ -120,6 +120,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ListProductUserControl.resx">
+      <DependentUpon>ListProductUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ListTableUserControl.resx">
       <DependentUpon>ListTableUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +134,9 @@
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\DataSources\Model.BusinessObject.BanModel.datasource" />
+    <None Include="Properties\DataSources\Model.BusinessObject.ChitietHoadonModel.datasource" />
+    <None Include="Properties\DataSources\Model.BusinessObject.HanghoaModel.datasource" />
+    <None Include="Properties\DataSources\Model.BusinessObject.HoadonModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

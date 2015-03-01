@@ -93,12 +93,7 @@ namespace POSManager.UserControls
                 {
                     p = new TableUserControl(DataSource[i]);
                     p.Location = new Point(left, top);
-                    //p.DatPhongClick += new EventHandler(OnDatPhongItem_Click);
-                    //p.CheckinClick += new EventHandler(OnCheckinItem_Click);
-                    //p.CheckoutClick += new EventHandler(OnCheckoutItem_Click);
-                    //p.ThanhtoanClick += new EventHandler(OnThanhtoanItem_Click);
-                    //p.DanhsachkhachClick += new EventHandler(OnDanhsachkhachItem_Click);
-                    //p.PhongUserControlDoubleClick += new EventHandler(OnPhongUserControl_DoubleClick);
+                    p.TableClick += new EventHandler(OnTableItem_Click);
 
                     listTableLayout.Add(p);
 
@@ -134,9 +129,28 @@ namespace POSManager.UserControls
             }
         }
 
-        private void BanbindingSource_PositionChanged(object sender, EventArgs e)
+        public event EventHandler TableItemClick;
+        private void OnTableItem_Click(object sender, EventArgs e)
+        {
+            EventHandler handler = TableItemClick;
+            if (handler != null)
+            {
+                handler(sender, e);
+            }
+        }
+
+        private void BanbindingSource_DataSourceChanged(object sender, EventArgs e)
         {
             XepBan();
+        }
+
+        internal void ResetBorderStype()
+        {
+            foreach (var item in listTableLayout)
+            {
+                item.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                item.labelName.ForeColor = Color.Black;
+            }
         }
     }
 }

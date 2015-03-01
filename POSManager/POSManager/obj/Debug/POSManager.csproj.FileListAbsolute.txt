@@ -26,3 +26,32 @@ c:\users\danh\documents\visual studio 2012\Projects\POSManager\POSManager\bin\De
 C:\Users\DANH\Documents\Visual Studio 2012\Projects\POSManager\POSManager\obj\Debug\POSManager.UserControls.TableUserControl.resources
 C:\Users\DANH\Documents\Visual Studio 2012\Projects\POSManager\POSManager\obj\Debug\POSManager.UserControls.ListTableUserControl.resources
 C:\Users\DANH\Documents\Visual Studio 2012\Projects\POSManager\POSManager\obj\Debug\POSManager.UserControls.ProductUserControl.resources
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\POSManager.exe.config
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.exe
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.pdb
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\POSManager.exe
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\POSManager.pdb
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Form.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Lambda.BusinessObject.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Lambda.ClientModel.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Model.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Presenter.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\View.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Lambda.Framework.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Lambda.CoreService.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Lambda.AutoService.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Lambda.DataObject.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Lambda.DynamicLoad.dll
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Form.pdb
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Model.pdb
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\Presenter.pdb
+D:\Dropbox\WinPOSManager\POSManager\POSManager\bin\Debug\View.pdb
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.MainForm.resources
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.Properties.Resources.resources
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.UserControls.ListTableUserControl.resources
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.UserControls.ProductUserControl.resources
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.UserControls.TableUserControl.resources
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.csproj.GenerateResource.Cache
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.exe.licenses
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.UserControls.ListProductUserControl.resources
+D:\Dropbox\WinPOSManager\POSManager\POSManager\obj\Debug\POSManager.csprojResolveAssemblyReference.cache

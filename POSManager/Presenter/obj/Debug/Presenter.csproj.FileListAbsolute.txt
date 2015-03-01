@@ -14,3 +14,19 @@ c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Deb
 c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\Model.pdb
 c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\bin\Debug\View.pdb
 c:\users\danh\documents\visual studio 2012\Projects\POSManager\Presenter\obj\Debug\Presenter.csprojResolveAssemblyReference.cache
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Presenter.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Presenter.pdb
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Lambda.BusinessObject.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Lambda.ClientModel.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Model.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\View.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Lambda.Framework.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Lambda.CoreService.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Lambda.AutoService.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Lambda.DataObject.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Lambda.DynamicLoad.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\Model.pdb
+D:\Dropbox\WinPOSManager\POSManager\Presenter\bin\Debug\View.pdb
+D:\Dropbox\WinPOSManager\POSManager\Presenter\obj\Debug\Presenter.csprojResolveAssemblyReference.cache
+D:\Dropbox\WinPOSManager\POSManager\Presenter\obj\Debug\Presenter.dll
+D:\Dropbox\WinPOSManager\POSManager\Presenter\obj\Debug\Presenter.pdb

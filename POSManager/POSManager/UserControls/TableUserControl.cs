@@ -56,8 +56,8 @@ namespace POSManager.UserControls
                 this.labelName.Text = string.Format("{0}", BanItem.Ten);
                 this.BackgroundImage = imageCollection.DungDuoc(BanItem.HoadonId == null);
                 this.CleanpictureEdit.Image = imageCollection.Quetdon();
-                if (BanItem.Candon == null)
-                    BanItem.Candon = false;
+                //if (BanItem.Candon == null)
+                //    BanItem.Candon = false;
                 canDonToolStripMenuItem.Checked = CleanpictureEdit.Visible = BanItem.Candon.Value;
                 
             }
@@ -68,6 +68,16 @@ namespace POSManager.UserControls
         {
             if (flag == false)
                 flag = true;
+        }
+
+        public event EventHandler TableClick;
+        private void TableUserControl_Click(object sender, EventArgs e)
+        {
+            EventHandler handler = TableClick;
+            if (handler != null)
+            {
+                handler(this, e);
+            }
         }
     }
     public static class Extentions
