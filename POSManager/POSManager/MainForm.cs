@@ -43,6 +43,7 @@ namespace POSManager
         {
             _presenter = new MainFormPresenter(this);
             _presenter.LoadData();
+            SdateEdit.DateTime = EdateEdit.DateTime = DateTime.Now;
         }
 
 
@@ -217,6 +218,27 @@ namespace POSManager
             {
                 return listHoadonTrongngaybindingSource.Current as HoadonModel;
             }
+        }
+
+        private void listHoadonChuathanhtoanBindingSource_PositionChanged(object sender, EventArgs e)
+        {
+            _presenter.LoadHoadonByHoadonId();
+        }
+
+
+        public DateTime SNgay
+        {
+            get { return SdateEdit.DateTime; }
+        }
+
+        public DateTime ENgay
+        {
+            get { return EdateEdit.DateTime; }
+        }
+
+        private void LocButton_Click(object sender, EventArgs e)
+        {
+            _presenter.LoadHoadonByNgay();
         }
     }
 }

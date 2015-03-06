@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label tenKhachhangLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.navbarImageListLarge = new System.Windows.Forms.ImageList(this.components);
             this.navbarImageList = new System.Windows.Forms.ImageList(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -102,6 +102,11 @@
             this.colTenKhachhang1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTenBan1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.SdateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.EdateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.LocButton = new DevExpress.XtraEditors.SimpleButton();
             tenKhachhangLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -139,6 +144,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.listHoadonTrongngaybindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
+            this.panelControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SdateEdit.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SdateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EdateEdit.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EdateEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tenKhachhangLabel
@@ -625,7 +635,7 @@
             // 
             this.ItemButtonDelete.AutoHeight = false;
             this.ItemButtonDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("ItemButtonDelete.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("ItemButtonDelete.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
             this.ItemButtonDelete.Name = "ItemButtonDelete";
             this.ItemButtonDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.ItemButtonDelete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.ItemButtonDelete_ButtonClick);
@@ -808,9 +818,122 @@
             // listHoadonChuathanhtoanBindingSource
             // 
             this.listHoadonChuathanhtoanBindingSource.DataSource = typeof(Model.BusinessObject.HoadonModel);
+            this.listHoadonChuathanhtoanBindingSource.PositionChanged += new System.EventHandler(this.listHoadonChuathanhtoanBindingSource_PositionChanged);
             // 
             // gridView2
             // 
+            this.gridView2.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(171)))), ((int)(((byte)(228)))));
+            this.gridView2.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.ColumnFilterButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.gridView2.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.gridView2.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
+            this.gridView2.Appearance.ColumnFilterButton.Options.UseForeColor = true;
+            this.gridView2.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.gridView2.Appearance.ColumnFilterButtonActive.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(190)))), ((int)(((byte)(243)))));
+            this.gridView2.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.gridView2.Appearance.ColumnFilterButtonActive.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.ColumnFilterButtonActive.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.gridView2.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
+            this.gridView2.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
+            this.gridView2.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
+            this.gridView2.Appearance.Empty.BackColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.Empty.Options.UseBackColor = true;
+            this.gridView2.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.EvenRow.Options.UseBackColor = true;
+            this.gridView2.Appearance.EvenRow.Options.UseForeColor = true;
+            this.gridView2.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.FilterCloseButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(171)))), ((int)(((byte)(228)))));
+            this.gridView2.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.FilterCloseButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.gridView2.Appearance.FilterCloseButton.Options.UseBackColor = true;
+            this.gridView2.Appearance.FilterCloseButton.Options.UseBorderColor = true;
+            this.gridView2.Appearance.FilterCloseButton.Options.UseForeColor = true;
+            this.gridView2.Appearance.FilterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(109)))), ((int)(((byte)(185)))));
+            this.gridView2.Appearance.FilterPanel.ForeColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.FilterPanel.Options.UseBackColor = true;
+            this.gridView2.Appearance.FilterPanel.Options.UseForeColor = true;
+            this.gridView2.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.gridView2.Appearance.FixedLine.Options.UseBackColor = true;
+            this.gridView2.Appearance.FocusedCell.BackColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.FocusedCell.Options.UseBackColor = true;
+            this.gridView2.Appearance.FocusedCell.Options.UseForeColor = true;
+            this.gridView2.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(106)))), ((int)(((byte)(197)))));
+            this.gridView2.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gridView2.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.gridView2.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.FooterPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(171)))), ((int)(((byte)(228)))));
+            this.gridView2.Appearance.FooterPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.FooterPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.gridView2.Appearance.FooterPanel.Options.UseBackColor = true;
+            this.gridView2.Appearance.FooterPanel.Options.UseBorderColor = true;
+            this.gridView2.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridView2.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.gridView2.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.gridView2.Appearance.GroupButton.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.GroupButton.Options.UseBackColor = true;
+            this.gridView2.Appearance.GroupButton.Options.UseBorderColor = true;
+            this.gridView2.Appearance.GroupButton.Options.UseForeColor = true;
+            this.gridView2.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.gridView2.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.gridView2.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.GroupFooter.Options.UseBackColor = true;
+            this.gridView2.Appearance.GroupFooter.Options.UseBorderColor = true;
+            this.gridView2.Appearance.GroupFooter.Options.UseForeColor = true;
+            this.gridView2.Appearance.GroupPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(109)))), ((int)(((byte)(185)))));
+            this.gridView2.Appearance.GroupPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.GroupPanel.Options.UseBackColor = true;
+            this.gridView2.Appearance.GroupPanel.Options.UseForeColor = true;
+            this.gridView2.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.gridView2.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.gridView2.Appearance.GroupRow.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.gridView2.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.GroupRow.Options.UseBackColor = true;
+            this.gridView2.Appearance.GroupRow.Options.UseBorderColor = true;
+            this.gridView2.Appearance.GroupRow.Options.UseFont = true;
+            this.gridView2.Appearance.GroupRow.Options.UseForeColor = true;
+            this.gridView2.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(171)))), ((int)(((byte)(228)))));
+            this.gridView2.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(254)))));
+            this.gridView2.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.HeaderPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.gridView2.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.gridView2.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.gridView2.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridView2.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(153)))), ((int)(((byte)(228)))));
+            this.gridView2.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(224)))), ((int)(((byte)(251)))));
+            this.gridView2.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.gridView2.Appearance.HideSelectionRow.Options.UseForeColor = true;
+            this.gridView2.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(127)))), ((int)(((byte)(196)))));
+            this.gridView2.Appearance.HorzLine.Options.UseBackColor = true;
+            this.gridView2.Appearance.OddRow.BackColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.OddRow.Options.UseBackColor = true;
+            this.gridView2.Appearance.OddRow.Options.UseForeColor = true;
+            this.gridView2.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.gridView2.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(129)))), ((int)(((byte)(185)))));
+            this.gridView2.Appearance.Preview.Options.UseBackColor = true;
+            this.gridView2.Appearance.Preview.Options.UseForeColor = true;
+            this.gridView2.Appearance.Row.BackColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.gridView2.Appearance.Row.ForeColor = System.Drawing.Color.Black;
+            this.gridView2.Appearance.Row.Options.UseBackColor = true;
+            this.gridView2.Appearance.Row.Options.UseFont = true;
+            this.gridView2.Appearance.Row.Options.UseForeColor = true;
+            this.gridView2.Appearance.RowSeparator.BackColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.RowSeparator.Options.UseBackColor = true;
+            this.gridView2.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(126)))), ((int)(((byte)(217)))));
+            this.gridView2.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White;
+            this.gridView2.Appearance.SelectedRow.Options.UseBackColor = true;
+            this.gridView2.Appearance.SelectedRow.Options.UseForeColor = true;
+            this.gridView2.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(127)))), ((int)(((byte)(196)))));
+            this.gridView2.Appearance.VertLine.Options.UseBackColor = true;
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colNhanvienId,
             this.colNgaygio,
@@ -819,6 +942,8 @@
             this.colTenBan});
             this.gridView2.GridControl = this.listHoadonChuathanhtoanModelGridControl;
             this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridView2.OptionsView.EnableAppearanceOddRow = true;
             this.gridView2.OptionsView.ShowFooter = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
@@ -891,6 +1016,8 @@
             // 
             // gridView3
             // 
+            this.gridView3.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.gridView3.Appearance.Row.Options.UseFont = true;
             this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colNhanvienId1,
             this.colNgaygio1,
@@ -945,11 +1072,67 @@
             // 
             // panelControl6
             // 
+            this.panelControl6.Controls.Add(this.LocButton);
+            this.panelControl6.Controls.Add(this.labelControl2);
+            this.panelControl6.Controls.Add(this.labelControl1);
+            this.panelControl6.Controls.Add(this.EdateEdit);
+            this.panelControl6.Controls.Add(this.SdateEdit);
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl6.Location = new System.Drawing.Point(0, 0);
             this.panelControl6.Name = "panelControl6";
             this.panelControl6.Size = new System.Drawing.Size(642, 50);
             this.panelControl6.TabIndex = 1;
+            // 
+            // SdateEdit
+            // 
+            this.SdateEdit.EditValue = null;
+            this.SdateEdit.Location = new System.Drawing.Point(72, 14);
+            this.SdateEdit.MenuManager = this.ribbonControl;
+            this.SdateEdit.Name = "SdateEdit";
+            this.SdateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SdateEdit.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.SdateEdit.Size = new System.Drawing.Size(100, 20);
+            this.SdateEdit.TabIndex = 0;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(20, 17);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(40, 13);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Từ ngày";
+            // 
+            // EdateEdit
+            // 
+            this.EdateEdit.EditValue = null;
+            this.EdateEdit.Location = new System.Drawing.Point(261, 14);
+            this.EdateEdit.Name = "EdateEdit";
+            this.EdateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.EdateEdit.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.EdateEdit.Size = new System.Drawing.Size(100, 20);
+            this.EdateEdit.TabIndex = 0;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(204, 17);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(47, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Đến ngày";
+            // 
+            // LocButton
+            // 
+            this.LocButton.Image = ((System.Drawing.Image)(resources.GetObject("LocButton.Image")));
+            this.LocButton.Location = new System.Drawing.Point(392, 13);
+            this.LocButton.Name = "LocButton";
+            this.LocButton.Size = new System.Drawing.Size(75, 21);
+            this.LocButton.TabIndex = 2;
+            this.LocButton.Text = "Lọc";
+            this.LocButton.Click += new System.EventHandler(this.LocButton_Click);
             // 
             // MainForm
             // 
@@ -1005,6 +1188,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.listHoadonTrongngaybindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
+            this.panelControl6.ResumeLayout(false);
+            this.panelControl6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SdateEdit.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SdateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EdateEdit.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EdateEdit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1081,6 +1270,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTenKhachhang1;
         private DevExpress.XtraGrid.Columns.GridColumn colTenBan1;
         private DevExpress.XtraEditors.PanelControl panelControl6;
+        private DevExpress.XtraEditors.SimpleButton LocButton;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.DateEdit EdateEdit;
+        private DevExpress.XtraEditors.DateEdit SdateEdit;
 
     }
 }

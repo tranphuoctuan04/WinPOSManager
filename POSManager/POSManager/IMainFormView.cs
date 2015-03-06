@@ -23,5 +23,8 @@ namespace POSManager
 
         List<HoadonModel> HoadonTrongngayItems { get; set; }
         HoadonModel HoadonTrongngayCurrent { get; }
+
+        DateTime SNgay { get; }
+        DateTime ENgay { get; }
     }
 }

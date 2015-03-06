@@ -227,5 +227,32 @@ namespace POSManager
             }
             View.RefreshData();
         }
+
+        internal void LoadHoadonByHoadonId()
+        {
+            View.HoaDonCurrent = View.HoadonChuathanhtoanCurrent;
+            var item = new List<AutoItem>();
+            item.Add(new AutoItem { Name = "HoadonId", Value = View.HoaDonCurrent.HoadonId, SqlType = System.Data.SqlDbType.UniqueIdentifier });
+            View.ChitietHoadonItems = Model.Get<ChitietHoadonModel>(new AutoObject { Items = item, SpName = "Pos_Danh_GetChitietHoadonByHoadonId" });
+            var item2 = new List<AutoItem>();
+            item2.Add(new AutoItem { Name = "BanId", Value = View.HoaDonCurrent.BanId, SqlType = System.Data.SqlDbType.UniqueIdentifier });
+            View.BanCurrent = Model.Get<BanModel>(new AutoObject { Items = item2, SpName = "Pos_Danh_GetBanByBanId" }).FirstOrDefault();
+        }
+
+        internal void LoadHoadonByNgay()
+        {
+            DateTime s = View.SNgay;
+            DateTime e = View.ENgay;
+            if (s == DateTime.MinValue)
+                s = new DateTime(2014, 1, 1);
+            if (e == DateTime.MinValue)
+                e = DateTime.MaxValue;
+            else
+                e = e.AddHours(23.99);
+            var item = new List<AutoItem>();
+            item.Add(new AutoItem { Name = "SDate", Value = s, SqlType = System.Data.SqlDbType.DateTime });
+            item.Add(new AutoItem { Name = "EDate", Value = e, SqlType = System.Data.SqlDbType.DateTime });
+            View.HoadonTrongngayItems = Model.Get<HoadonModel>(new AutoObject { Items = item, SpName = "Pos_Danh_GetHoadonByNgay" });
+        }
     }
 }
